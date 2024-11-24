@@ -1,0 +1,12 @@
+crx-wizard/
+├── icons/
+│   ├── 16.png
+│   ├── 48.png
+│   └── 128.png
+├── js/
+│   ├── background.js
+│   └── popup.js
+├── popup.html
+├── manifest.json
+├── README.md
+└── README.html
