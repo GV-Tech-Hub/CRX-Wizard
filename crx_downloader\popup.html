@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRX Extractor/Downloader</title>
+    <style>
+        body {
+            width: 350px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+        .info-panel {
+            background: #f5f5f5;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            min-height: 50px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 2px solid #4CAF50;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        .primary-button {
+            background: #4CAF50;
+            color: white;
+        }
+        .primary-button:hover {
+            background: #45a049;
+        }
+        .secondary-button {
+            background: transparent;
+            color: #4CAF50;
+        }
+        .secondary-button:hover {
+            background: #4CAF50;
+            color: white;
+        }
+        button:disabled {
+            background: #cccccc;
+            border-color: #cccccc;
+            color: #666666;
+            cursor: not-allowed;
+        }
+        #extensionInfo {
+            line-height: 1.4;
+        }
+        .success {
+            color: #4CAF50;
+        }
+        .warning {
+            color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <div class="info-panel">
+        <div id="extensionInfo">Welcome to CRX Extractor! Use this tool to download Chrome extensions in CRX or ZIP format. Visit any extension page on the Chrome Web Store to begin.</div>
+    </div>
+    <button id="downloadCrx" class="primary-button">Download CRX</button>
+    <button id="convertToZip" class="secondary-button">Convert CRX to ZIP</button>
+    <button id="convertToCrx" class="secondary-button">Convert ZIP to CRX</button>
+    <script src="js/popup.js"></script>
+</body>
+</html>
